@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+/*eslint-disable*/
 module.exports = {
-  content: [],
+  content: [ './src/**/*.html', './src/**/*.vue', './src/**/*.jsx' ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans'], 
+      },
+
+    },
   },
   plugins: [],
 }
