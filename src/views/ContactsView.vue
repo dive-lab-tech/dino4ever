@@ -1,4 +1,8 @@
 <script setup>
+import {setTitle} from '@/utils';
+
+setTitle('Contactos | Dinosaurios Recargados');
+
 </script>
 
 <template>

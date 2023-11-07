@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue';
 
+
 const selectedLink = ref(null);
 const urlPath = ref(null);
 
@@ -28,7 +29,7 @@ onMounted(() => {
             <RouterLink class="menu-items transition duration-900" to="/home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath==='home' }"><img src="@/assets/images/logo-site.webp" class="logo-menu" alt=""></RouterLink>
           </li>
           <li>
-            <RouterLink class="menu-items transition duration-900 ml-5" to="/home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath==='home'  }">Home</RouterLink>
+            <RouterLink class="menu-items transition duration-900 ml-5" to="/home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath==='home'   }">Home</RouterLink>
           </li>
           <li>
             <RouterLink class="menu-items transition duration-90 ml-5" to="/contact" @click="changeColor('contact')" :class="{ 'active': selectedLink === 'contact' || urlPath==='contact'}">contactos</RouterLink>

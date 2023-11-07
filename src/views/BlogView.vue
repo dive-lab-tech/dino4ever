@@ -1,5 +1,8 @@
 <script setup>
 import{ onMounted } from 'vue';
+import {setTitle} from '@/utils';
+
+setTitle('Blog | Dinosaurios Recargados');
 
 onMounted(() => {
   
