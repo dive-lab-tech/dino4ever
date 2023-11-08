@@ -1,6 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue';
+// import FooterComponent from '@/components/FooterComponent.vue';
+
+
 
 
 const selectedLink = ref(null);
@@ -15,6 +18,7 @@ const changeColor = (link) => {
 
 onMounted(() => {
   selectedLink.value = window.location.pathname.substring(1);
+  
 });
 
 
@@ -37,14 +41,7 @@ onMounted(() => {
           <li>
             <RouterLink class="menu-items transition duration-900 ml-5" to="/blog" @click="changeColor('blog')" :class="{ 'active': selectedLink === 'blog' || urlPath==='blog'}">Blog</RouterLink>
           </li>
-          <li class="items-social w-2/12" style="opacity: 0;">
-            <a href="" class="w-5 h-3 bg-white rounded-full ml-2">
-              <font-awesome-icon :icon="['fab', 'facebook-f']"  class="text-black"/>
-            </a>
-            <a href="" class="w-5 h-3 bg-white rounded-full ml-4">
-              <font-awesome-icon :icon="['fab', 'instagram']"  class="text-black"/>
-            </a>
-          </li>
+         
         </ul>
       </nav>
     </div>
@@ -53,7 +50,9 @@ onMounted(() => {
   </header>
 
 
+
   <RouterView />
+
 
 </template>
 

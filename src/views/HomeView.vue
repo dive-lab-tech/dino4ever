@@ -5,6 +5,9 @@ import { setTitle } from "@/utils";
 import GalleryHome from "@/components/GalleryHome.vue";
 import neonText from "@/assets/images/neon-text-home-1.webp";
 import neonText2 from "@/assets/images/neon-text-home-2.webp";
+import FooterComponent from "@/components/FooterComponent.vue";
+
+
 
 let urlNeonText = ref(neonText);
 
@@ -96,11 +99,11 @@ onMounted(() => {
     <div class="h-screen">
       <div class="h-full w-full pt-10">
         <div class="w-full flex justify-center items-center h-2/12">
-          <h1 class="text-white font-semibold text-4xl">NUESTRA DINOGALERÍA</h1>
+          <h1 class="text-primary font-semibold text-4xl">NUESTRA DINOGALERÍA</h1>
         </div>
         <div class="h-10/12">
           <div class="flex justify-center">
-            <div class="w-6/12">
+            <div class="w-6/12" >
               <GalleryHome />
             </div>
           </div>
@@ -116,54 +119,69 @@ onMounted(() => {
           </div>
           <div class="h-9/12">
             <div class="flex justify-between flex-col w-full h-full">
-                <div class="flex justify-center">
-                  <div class="w-6/12 text-white text-center  text-lg">
+                <div class="flex justify-center items-center h-full ">
+                  <div class="w-6/12 text-white text-center  text-lg min-[1500px]:text-xl">
                 <p>
                   ¡Prepárate para vivir una experiencia única e inolvidable en
                   el evento más esperado del año! 
                 </p>
-                <p>
+                <p class="mb-3">
                   Con más de 5000 metros
                   cuadrados de exhibición donde podrás interactuar con
                   dinosaurios animatronics de última generación a escala real y
                   descubrir nuevos mundos increíbles de luces y proyecciones.
                 </p>
-                <p>
+                <p class="mb-3">
                    Además, podrás disfrutar de actividades interactivas en todo
                   el recorrido y sumergirte en áreas de realidad virtual
                   innovadora que te llevarán a la época prehistórica como nunca
                   antes lo habías imaginado.
                 </p>
-                <p>
+                <p class="mb-3">
                   Todo esto en una puesta en escena
                   moderna única en Chile. Llega una nueva generación recargada
                   de dinosaurios que te transportarán a un mundo lleno de
                   energía y emoción. 
                 </p>
-                <p>
+                <p class="mb-3">
                   ¡No te pierdas esta oportunidad de vivir
                   una aventura emocionante junto a tu familia y amigos en el
                   centro cultural Estación Mapocho!
                 </p>
               </div>
                 </div>
-              <div class="text-white flex  flex-col justify-center mb-4">
+              <div class="text-white flex  flex-col justify-center mb-10">
                 <div class="text-center">
                   <p class=" text-primary text-2xl font-bold">MÁS RECARGADOS QUE NUNCA</p>
                 </div>
                 <div class="text-center mt-3">
-                  <a href="/faqs" class=" bg-primary px-7 py-2 rounded-3xl text-black">FAQ</a>
+                  <a href="/faqs" class=" bg-primary px-7 py-2 rounded-3xl text-black button-faqs transition duration-500">FAQs</a>
                 </div>
               </div>
             </div>
           </div>
 
+       <FooterComponent />
+
         </div>
       </div>
     </div>
+
   </div>
+
+
+
+
+
 </template>
 <style scoped>
+
+.button-faqs:hover{
+  opacity: 0.8;
+  box-shadow: 0px 7px 28px 1px rgba(255,255,255,0.47);
+-webkit-box-shadow: 0px 7px 28px 1px rgba(255,255,255,0.47);
+-moz-box-shadow: 0px 7px 28px 1px rgba(255,255,255,0.47);
+}
 .text-intro {
   left: 33rem;
   display: flex;

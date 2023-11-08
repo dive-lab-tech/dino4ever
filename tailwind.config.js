@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 /*eslint-disable*/
 module.exports = {
-  content: [ './src/**/*.html', './src/**/*.vue', './src/**/*.jsx' ],
+  content: [ './src/**/*.html', './src/**/*.vue', './src/**/*.jsx', './src/**/*.js' ],
   theme: {
     extend: {
       fontFamily: {

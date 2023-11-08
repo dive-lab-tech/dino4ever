@@ -23,6 +23,11 @@ const router = createRouter({
       name: 'contact',
       component: () => import('@/views/ContactsView.vue') // Reemplaza 'ContactView.vue' con tu nombre de archivo real
     },
+    {
+      path: '/faqs',
+      name: 'faqs',
+      component: () => import('@/views/FaqsView.vue')
+    },
     // si no existe la ruta
     {
       path: '/:pathMatch(.*)*',

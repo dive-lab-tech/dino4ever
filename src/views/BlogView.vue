@@ -16,6 +16,9 @@ onMounted(() => {
     </div>
   
   </div>
+  <footer>
+  <FooterComponent />
+</footer>
 </template>
 
 <style>
