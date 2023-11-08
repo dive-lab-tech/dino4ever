@@ -36,7 +36,7 @@ onMounted(() => {
             <RouterLink class="menu-items transition duration-900 ml-5" to="/home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath==='home'   }">Home</RouterLink>
           </li>
           <li>
-            <RouterLink class="menu-items transition duration-90 ml-5" to="/contact" @click="changeColor('contact')" :class="{ 'active': selectedLink === 'contact' || urlPath==='contact'}">contactos</RouterLink>
+            <RouterLink class="menu-items transition duration-90 ml-5" to="/faqs" @click="changeColor('faqs')" :class="{ 'active': selectedLink === 'faqs' || urlPath==='faqs'}">Faqs</RouterLink>
           </li>
           <li>
             <RouterLink class="menu-items transition duration-900 ml-5" to="/blog" @click="changeColor('blog')" :class="{ 'active': selectedLink === 'blog' || urlPath==='blog'}">Blog</RouterLink>

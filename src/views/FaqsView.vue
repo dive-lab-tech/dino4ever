@@ -9,11 +9,11 @@ setTitle('Preguntas Frecuentes');
 </script>
 <template>
     <div class=" bg-faqs ">
-        <div class=" w-full h-full bg-black bg-opacity-50 pt-20">
+        <div class=" w-full h-full bg-black bg-opacity-40 py-20">
           <div class="flex justify-center">
             <div class="pt-20 w-5/12">
-            <div class="mb-3">
-                <h1 class="text-primary font-bold text-3xl mb-4 text-center">PREGUNTAS FRECUENTES</h1>
+            <div class="sm:mb-14">
+                <h1 class=" font-bold text-5xl mb-4 text-center uppercase text-secondary">Preguntas frecuentes</h1>
             </div>
             <!-- <ul class="list-ask font-montserrat">
                 <li v-for="item in itemsFaqs" :key="item.id" class="text-white items-ask mb-5">

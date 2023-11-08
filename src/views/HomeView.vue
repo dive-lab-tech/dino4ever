@@ -99,7 +99,7 @@ onMounted(() => {
     <div class="h-screen">
       <div class="h-full w-full pt-10">
         <div class="w-full flex justify-center items-center h-2/12">
-          <h1 class="text-primary font-semibold text-4xl">NUESTRA DINOGALERÍA</h1>
+          <h1 class="text-primaryLight font-semibold text-4xl">NUESTRA DINOGALERÍA</h1>
         </div>
         <div class="h-10/12">
           <div class="flex justify-center">
@@ -152,10 +152,10 @@ onMounted(() => {
                 </div>
               <div class="text-white flex  flex-col justify-center mb-10">
                 <div class="text-center">
-                  <p class=" text-primary text-2xl font-bold">MÁS RECARGADOS QUE NUNCA</p>
+                  <p class=" text-primaryLight text-2xl font-bold">MÁS RECARGADOS QUE NUNCA</p>
                 </div>
                 <div class="text-center mt-3">
-                  <a href="/faqs" class=" bg-primary px-7 py-2 rounded-3xl text-black button-faqs transition duration-500">FAQs</a>
+                  <a href="/faqs" class=" bg-primaryLight px-7 py-2 rounded-3xl text-black button-faqs transition duration-500">FAQs</a>
                 </div>
               </div>
             </div>

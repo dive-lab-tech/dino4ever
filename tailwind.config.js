@@ -9,7 +9,12 @@ module.exports = {
       },
 
       colors: {
-        'primary': '#09FDF6',
+        'primary': '#312263',
+        primaryDark: '#312263',
+        primaryLight: '#00ffff',
+        secondary: '#f2d231',
+        secondaryDark: '#000635',
+        accent: '#ac78FF',
       },
 
       height: {
