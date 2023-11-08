@@ -25,7 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="absolute left-80">
+  <header class="absolute left-80 max-[767px]:hidden" >
     <div >
       <nav>
         <ul class="flex justify-center items-center text-white uppercase">
@@ -45,8 +45,6 @@ onMounted(() => {
         </ul>
       </nav>
     </div>
-
-  
   </header>
 
 

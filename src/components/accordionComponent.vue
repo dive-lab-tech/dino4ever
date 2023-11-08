@@ -78,7 +78,7 @@ onMounted(() => {
                     </div>
                 </div> -->
 
-                <div class=" bg-white item-accordion" style="opacity: 0;">
+                <div class=" bg-white item-accordion bg-opacity-80" style="opacity: 1;">
                     <div class="accordion-header flex justify-between items-center accordion-item-0 bg-white "
                         @click="showItemAccordion(0)">
                         <span class="font-kanit font-semibold text-2xl transition duration-500 " :class="activeItem==0 ?' text-black':'text-black'">
@@ -87,10 +87,10 @@ onMounted(() => {
                         <font-awesome-icon :icon="activeItem === 0 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
                                 " class="btn-icon  text-2xl transition duration-500 text-primary" />
                     </div>
-                    <div class="accordion-body  bg-opacity-80   border-t">
+                    <div class="accordion-body    border-t">
                         <div class="py-5 px-3 flex">
                             <div class="p-4 pt-3 w-8/12">
-                            <p class="text-black flex ">
+                            <p class=" text-gray-900 flex ">
                             <span> <font-awesome-icon :icon="['fas', 'calendar-days'] " class=" mr-2" /></span> Del 30 de junio al 16 de Julio del 2023. lorem
                             </p>
                         </div>
@@ -107,7 +107,7 @@ onMounted(() => {
                         <span class="font-kanit font-semibold text-2xl transition duration-500 " :class="activeItem==1 ?' text-black':'text-black'">
                             2. ¿Cuando es el evento?
                         </span>
-                        <font-awesome-icon :icon="activeItem === 0 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
+                        <font-awesome-icon :icon="activeItem === 1 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
                                 " class="btn-icon  text-2xl transition duration-500 text-primary" />
                     </div>
                     <div class="accordion-body  bg-opacity-80   border-t">
@@ -245,13 +245,13 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.accordion-header{
+/* .accordion-header{
     border-radius:  0.5rem 0.5rem 0 0;
 }
 
 .accordion-header.active{
     border-radius:  0.5rem 0.5rem 0 0;
-}
+} */
 
 .item-accordion{
     transform: translateX(8rem);

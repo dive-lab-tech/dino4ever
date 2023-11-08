@@ -96,31 +96,31 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div class="h-screen">
-      <div class="h-full w-full pt-10">
+    <div class="h-screen max-[767px]:h-auto max-[767px]:py-10">
+      <div class="h-full w-full pt-10 ">
         <div class="w-full flex justify-center items-center h-2/12">
           <h1 class="text-primaryLight font-semibold text-4xl">NUESTRA DINOGALERÍA</h1>
         </div>
         <div class="h-10/12">
-          <div class="flex justify-center">
-            <div class="w-6/12" >
+          <div class="flex justify-center items-center">
+            <div class="w-6/12 max-[767px]:w-11/12 " >
               <GalleryHome />
             </div>
           </div>
         </div>
-        <div class="flex justify-center">
-          <div class="w-8/12 flex justify-center">
-            <img src="@/assets/images/eyes-dino-home.jpg" alt="" srcset="" class="w-9/12" />
+        <div class="flex justify-center max-[767px]:py-32">
+          <div class="w-8/12 flex justify-center max-[767px]:w-full">
+            <img src="@/assets/images/eyes-dino-home.jpg" alt="" srcset="" class="w-9/12 max-[767px]:w-full" />
           </div>
         </div>
-        <div class="h-screen">
+        <div class="h-screen max-[767px]:h-auto">
           <div class="h-3/12 w-full flex justify-center">
             <img :src="urlNeonText" alt="" srcset="" class="image-text-neon" />
           </div>
-          <div class="h-9/12">
+          <div class="h-9/12 max-[767px]:w-full max-[767px]:p-2">
             <div class="flex justify-between flex-col w-full h-full">
                 <div class="flex justify-center items-center h-full ">
-                  <div class="w-6/12 text-white text-center  text-lg min-[1500px]:text-xl">
+                  <div class="w-6/12 text-white text-center  text-lg min-[1500px]:text-xl max-[767px]:w-full max-[767px]:text-sm">
                 <p>
                   ¡Prepárate para vivir una experiencia única e inolvidable en
                   el evento más esperado del año! 
@@ -221,4 +221,35 @@ onMounted(() => {
 .container-logo-heroes {
   left: 28rem;
 }
+
+ /* Pantallas grandes */
+ @media (min-width: 1500px) {
+  }
+  /* PC */
+  @media (min-width: 1200px) and (max-width: 1499px) {}
+  /* Pantallas para tablets */
+  @media only screen and (min-width: 801px) and (max-width: 1199px) {
+  }
+  
+  /* Pantallas para tablets pequeñas*/
+  @media only screen and (min-width: 768px) and (max-width: 800px) {
+  }
+  
+  /* Pantallas mobiles */
+  @media only screen and (min-width: 381px) and (max-width: 767px) {
+
+    .bg-home {
+  background-image: url("@/assets/images/bg-home-mobile.webp");
+}
+  
+  }
+  /*Mobile con pantallas pequeñas*/
+  @media (max-width: 380px) { 
+    .bg-home {
+  background-image: url("@/assets/images/bg-home-mobile.webp");
+}
+  }
+
+
+  
 </style>

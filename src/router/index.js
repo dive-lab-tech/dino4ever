@@ -22,6 +22,10 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: () => import('@/views/ContactsView.vue') // Reemplaza 'ContactView.vue' con tu nombre de archivo real
+    },{
+      path: '/prueba',
+      name: 'prueba',
+      component: () => import('@/views/PruebaView.vue')
     },
     {
       path: '/faqs',
