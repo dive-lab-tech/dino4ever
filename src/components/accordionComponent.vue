@@ -44,7 +44,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="justify-center text-white h-full font-montserrat">
+    <div class="justify-center text-white h-full font-montserrat min-[1199px]:pb-10">
         <div class="flex items-center">
             <div class="w-full items-center">
                 <!-- <div class=" max-w-2xl max-auto" v-for="(itemAccordion, index) in dataFaqs.itemsFaqs" :key="index" :class="index!=0?' mt-1':''">

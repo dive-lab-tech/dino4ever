@@ -48,7 +48,7 @@ onMounted(() => {
 
 </script>
 <template class="">
-  <div class=" bg-faqs overflow-hidden w-full max[767px]:px-2 h-full ">
+  <div class=" bg-faqs overflow-hidden w-full max[767px]:px-2  h-full ">
     <div class=" w-full h-full bg-black bg-opacity-40 px-2">
       <div class="flex justify-center">
         <div class="pt-20 w-5/12 max-[1199px]:w-7/12 max-[767px]:w-full">

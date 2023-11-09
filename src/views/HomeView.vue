@@ -96,15 +96,17 @@ onMounted(() => {
         </div>
       </div>
     </div> -->
+
     <div class="w-full">
       <div class=" bg-white banner-dino-fit">
-        <img src="@/assets/images/banner-home-sec-1.jpg" alt="">
+        <img src="@/assets/images/banner-home-sec-1.jpg" alt="" class=" max-[768px]:hidden">
+        <img src="@/assets/images/banner-home-sec-mobile-1.jpg" alt="" class="hidden max-[767px]:block">
       </div>
     </div>
     <div class="h-screen max-[767px]:h-auto max-[767px]:py-10">
       <div class="h-full w-full pt-10 ">
         <div class="w-full flex justify-center items-center h-2/12 max-[767px]:my-10 ">
-          <h1 class="text-primaryLight font-extrabold text-4xl max-[767px]:text-center title-gallery font-montserrat-bold">NUESTRA DINOGALERÍA</h1>
+          <h1 class="text-white font-extrabold text-4xl max-[767px]:text-center title-gallery font-montserrat-bold">NUESTRA DINOGALERÍA</h1>
         </div>
         <div class="h-10/12">
           <div class="flex justify-center items-center">
@@ -181,7 +183,7 @@ onMounted(() => {
 </template>
 <style scoped>
 .title-gallery {
-  text-shadow: rgb(255, 255, 255) 1px 0px 15px;
+  text-shadow:  rgb(255, 255, 255) 1px 0px 15px;
 }
 .button-faqs:hover{
   opacity: 0.8;
