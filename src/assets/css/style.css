@@ -30,6 +30,11 @@ body{
 box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.466);
 }
 
+.title-faqs-mobile:nth-child(1) .wordTitleFaqs{
+    border-radius: 5px 5px 15px 15px;
+
+}
+
 
 
 

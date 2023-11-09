@@ -1,58 +1,84 @@
 <script setup>
 import FooterComponent from '@/components/FooterComponent.vue';
 import accordionComponent from '@/components/AccordionComponent.vue';
-import { itemsFaqs } from '@/utils/data';
-import {setTitle} from '@/utils';
-import SplitType from 'split-type'
-import { onMounted, ref } from 'vue';
+import { setTitle } from '@/utils';
+import { onMounted } from 'vue';
+import gsap from 'gsap';
 
 
 setTitle('Preguntas Frecuentes');
 
-onMounted (()=>{
+onMounted(() => {
 
-  // const split = new SplitType ('.title-faqs', {
-  //   types: 'char, word, lines',
-  //   charClass: 'charTitleFaqs',
-  //   wordClass: 'wordTitleFaqs',
-  //   lineClass: 'lineTitleFaqs',
-  // })
+  gsap.to(
+    '.title-faqs',
+    {
+      duration: 0.7,
+      opacity: 1,
+      ease: 'power2.inOut',
+      delay: 0.5,
+      onComplete: () => {
+        const itemsAccordion = document.querySelectorAll(".item-accordion");
+        itemsAccordion.forEach((itemAccordion, index) => {
+          gsap.to(itemAccordion, {
+            duration: 0.5,
+            opacity: 1,
+            transform: "translateX(0)",
+            delay: 0.1 * index,
+            ease: "power2.inOut",
+          })
+        });
+      }
+    },
+  )
+
 
 });
 
 
+
+
+
+
+
+
+
+
+
+
 </script>
 <template class="">
-    <div class=" bg-faqs overflow-hidden w-full max[767px]:px-2 h-screen">
-        <div class=" w-full h-full bg-black bg-opacity-40 px-2">
-          <div class="flex justify-center">
-            <div class="pt-20 w-5/12 max-[767px]:w-full">
-            <div class="my-14 flex justify-center ">
-                <h1 class=" text-primary text-4xl mb-4 text-center uppercase title-faqs bg-primaryLight px-1 py-1 rounded-md font-montserrat-bold" style=" font-weight: 800;">Preguntas frecuentes</h1>
-            </div>
-            <!-- <ul class="list-ask font-montserrat">
+  <div class=" bg-faqs overflow-hidden w-full max[767px]:px-2 h-full ">
+    <div class=" w-full h-full bg-black bg-opacity-40 px-2">
+      <div class="flex justify-center">
+        <div class="pt-20 w-5/12 max-[1199px]:w-7/12 max-[767px]:w-full">
+          <div class="my-14 flex justify-center ">
+            <h1
+              class=" text-primary text-4xl mb-4 text-center uppercase title-faqs bg-primaryLight px-1 py-1 rounded-md font-montserrat-bold max-[767px]:text-2xl"
+              style=" font-weight: 800; opacity: 0;">Preguntas frecuentes</h1>
+          </div>
+
+          <!-- <ul class="list-ask font-montserrat">
                 <li v-for="item in itemsFaqs" :key="item.id" class="text-white items-ask mb-5">
                     <h4 class="text-primary font-semibold text-xl">{{item.ask}}</h4>
                     <p v-html="item.answer"></p>
                 </li>
             </ul> -->
-            <accordionComponent  :itemsFaqs="itemsFaqs"/>
+          <accordionComponent />
         </div>
-          </div>
-        </div>
+      </div>
     </div>
-    <footer>
-  <FooterComponent />
-</footer>
+  </div>
+  <footer>
+    <FooterComponent />
+  </footer>
 </template>
 
 <style scoped>
-
 .bg-faqs {
-    background: url('@/assets/images/bg-2.webp');
-    background-attachment: fixed;
-    background-size: cover;
+  background: url('@/assets/images/bg-2.webp');
+  background-attachment: fixed;
+  background-size: cover;
 
 }
-
 </style>

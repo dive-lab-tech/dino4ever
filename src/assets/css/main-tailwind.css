@@ -16,5 +16,8 @@
         @apply max-h-0 overflow-hidden transition-all duration-300 ;
       }
    
+      .title-faqs-mobile .wordTitleFaqs {
+        @apply bg-primaryLight;
+      }
 
     }

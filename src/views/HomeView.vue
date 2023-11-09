@@ -71,7 +71,7 @@ onMounted(() => {
 
 <template>
   <div class="font-montserrat"> 
-    <div class="h-screen overflow-hidden banner-dino" style="opacity: 0">
+    <!-- <div class="h-screen overflow-hidden banner-dino" style="opacity: 0">
       <div class="bg-home w-full h-full">
         <div class="flex flex-col h-full w-full pt-28 justify-between">
           <div class="relative w-fit container-logo-heroes" style="transform: scale(0)">
@@ -95,11 +95,16 @@ onMounted(() => {
           </div>
         </div>
       </div>
+    </div> -->
+    <div class="w-full">
+      <div class=" bg-white banner-dino-fit">
+        <img src="@/assets/images/banner-home-sec-1.jpg" alt="">
+      </div>
     </div>
     <div class="h-screen max-[767px]:h-auto max-[767px]:py-10">
       <div class="h-full w-full pt-10 ">
         <div class="w-full flex justify-center items-center h-2/12 max-[767px]:my-10 ">
-          <h1 class="text-primaryLight font-extrabold text-4xl max-[767px]:text-center">NUESTRA DINOGALERÍA</h1>
+          <h1 class="text-primaryLight font-extrabold text-4xl max-[767px]:text-center title-gallery font-montserrat-bold">NUESTRA DINOGALERÍA</h1>
         </div>
         <div class="h-10/12">
           <div class="flex justify-center items-center">
@@ -175,7 +180,9 @@ onMounted(() => {
 
 </template>
 <style scoped>
-
+.title-gallery {
+  text-shadow: rgb(255, 255, 255) 1px 0px 15px;
+}
 .button-faqs:hover{
   opacity: 0.8;
   box-shadow: 0px 7px 28px 1px rgba(255,255,255,0.47);
