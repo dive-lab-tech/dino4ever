@@ -1,12 +1,11 @@
 <script setup>
 import{ onMounted } from 'vue';
 import {setTitle} from '@/utils';
+import FooterComponent from '@/components/FooterComponent.vue';
 
 setTitle('Blog | Dinosaurios Recargados');
 
-onMounted(() => {
-  
-});
+
 </script>
 
 <template>

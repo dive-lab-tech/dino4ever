@@ -70,11 +70,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="font-montserrat">
-    <div class="h-screen overflow-hidden banner-dino" style="opacity: 1">
+  <div class="font-montserrat"> 
+    <div class="h-screen overflow-hidden banner-dino" style="opacity: 0">
       <div class="bg-home w-full h-full">
         <div class="flex flex-col h-full w-full pt-28 justify-between">
-          <div class="relative w-fit container-logo-heroes" style="transform: scale(1)">
+          <div class="relative w-fit container-logo-heroes" style="transform: scale(0)">
             <div class="flex flex-col justify-center w-9/12">
               <img src="@/assets/images/logo-heroes-home.webp" alt="" />
               <div class="logo-heroes font-semibold text-sm"></div>
@@ -83,7 +83,7 @@ onMounted(() => {
           <div class="w-full">
             <div class="relative container-logo-dino">
               <img src="@/assets/images/logo-banner-home.webp" alt="" class="logo-dino-banner"
-                style="transform: scale(1)" />
+                style="transform: scale(0)" />
             </div>
           </div>
           <div class="mb-3 pb-4">
@@ -98,8 +98,8 @@ onMounted(() => {
     </div>
     <div class="h-screen max-[767px]:h-auto max-[767px]:py-10">
       <div class="h-full w-full pt-10 ">
-        <div class="w-full flex justify-center items-center h-2/12">
-          <h1 class="text-primaryLight font-semibold text-4xl">NUESTRA DINOGALERÍA</h1>
+        <div class="w-full flex justify-center items-center h-2/12 max-[767px]:my-10 ">
+          <h1 class="text-primaryLight font-extrabold text-4xl max-[767px]:text-center">NUESTRA DINOGALERÍA</h1>
         </div>
         <div class="h-10/12">
           <div class="flex justify-center items-center">

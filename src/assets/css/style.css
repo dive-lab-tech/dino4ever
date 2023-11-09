@@ -8,12 +8,29 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('@/assets/fonts/Montserrat-Bold.ttf')format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background: black;
 }
+
+
+
+.title-faqs{
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.35); 
+box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.466);
+}
+
+
 
 
  /* Pantallas grandes */

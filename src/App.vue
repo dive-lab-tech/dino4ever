@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue';
 // import FooterComponent from '@/components/FooterComponent.vue';
-
+import preloader from '@/components/PreLoader.vue';
 
 
 
@@ -49,6 +49,7 @@ onMounted(() => {
 
 
 
+  <preloader />
   <RouterView />
 
 

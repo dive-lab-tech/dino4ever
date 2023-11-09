@@ -30,7 +30,7 @@ onMounted(() => {
     <VueFinalModal class="menu-modal h-full" content-class="menu-modal-content" overlay-transition="vfm-fade"
         content-transition="vfm-fade">
    
-    <button class="bg-black w-14 h-14 rounded-full flex justify-center items-center absolute top-7 right-7 z-50" @click="closeModal">
+    <button class="bg-black w-14 h-14 rounded-full flex justify-center items-center absolute top-7 right-7 z-50 max-[767px]:right-3 max-[767px]:top-3" @click="closeModal">
         <font-awesome-icon icon="xmark"  class="text-white text-5xl"/>
     </button>
  
@@ -38,13 +38,13 @@ onMounted(() => {
     <div class="modal-slider-content flex justify-center items-center">
     
 <swiper :navigation="true"  :modules="modules" class="mySwiperModal" :loop="true" :initial-slide="index"  :autoplay="{
-    delay: 3500,
+    delay: 3500*2,
     disableOnInteraction: false,
   }" >
     <swiper-slide v-for="(imageSlider, indexImage) in images" :key="indexImage">
         <div class=" bg-black">
             <img :src="imageSlider.src" v-if="imageSlider.type=='img'" class="img-slider"/>
-            <video :src="imageSlider.src"  autoplay  v-else></video>
+            <video :src="imageSlider.src" controls autoplay  v-else></video>
         </div>
     </swiper-slide>
   </swiper>
@@ -148,7 +148,18 @@ onMounted(() => {
 /* Pantallas mobiles */
 @media only screen and (min-width: 381px) and (max-width: 767px) {
 
-
+  .mySwiperModal .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.mySwiperModal .swiper-slide video {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 }
 
 /*Mobile con pantallas pequeñas*/
