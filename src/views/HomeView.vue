@@ -3,14 +3,14 @@ import gsap from "gsap";
 import { onMounted, ref } from "vue";
 import { setTitle } from "@/utils";
 import GalleryHome from "@/components/GalleryHome.vue";
-import neonText from "@/assets/images/neon-text-home-1.webp";
-import neonText2 from "@/assets/images/neon-text-home-2.webp";
 import FooterComponent from "@/components/FooterComponent.vue";
 import FaqsView from "@/views/FaqsView.vue";
+import Intro2Component from "@/components/Intro2Component.vue";
+import BuyTicketsComponents from "@/components/BuyTicketsComponents.vue";
 
 
 
-let urlNeonText = ref(neonText);
+
 
 let scrollBottom = ref(false);
 
@@ -25,29 +25,9 @@ onMounted(() => {
   console.log(alturaDivPadre);
 
 
-  gsap.to(".banner-dino", {
-    duration: 1,
-    opacity: 1,
-    ease: "power2.inOut",
-    onStart: () => {
-      gsap.to(".container-logo-heroes", {
-        duration: 0.4,
-        scale: 1,
-        ease: "power2.inOut",
-        delay: 1.5,
-        onComplete: () => {
-          gsap.to(".logo-dino-banner", {
-            duration: 0.4,
-            scale: 1,
-            ease: "power2.inOut",
-            delay: 0.8,
-          });
-        },
-      });
-    },
-  });
+ 
 
-  //Validacion de scroll Y
+  //Validación de scroll Y
   window.addEventListener("scroll", () => {
     const scroll = window.scrollY;
     if (scroll > 100) {
@@ -60,35 +40,7 @@ onMounted(() => {
 
 
 
-  // Animación de texto en bucle
-  (function animateNeonText() {
-    const tl = gsap.timeline({
-      onComplete: animateNeonText,
-    });
 
-    tl.to(".image-text-neon", {
-      duration: 0.4,
-      opacity: 1,
-      ease: "power2.inOut",
-      delay: 2.5,
-    })
-      .to(".image-text-neon", {
-        duration: 0.4,
-        opacity: 0,
-        ease: "power2.inOut",
-        delay: 0.8,
-        onComplete: () => {
-          urlNeonText.value =
-            urlNeonText.value === neonText ? neonText2 : neonText;
-        },
-      })
-      .to(".image-text-neon", {
-        duration: 0.4,
-        opacity: 1,
-        ease: "power2.inOut",
-        delay: 0.8,
-      });
-  })();
 });
 </script>
 
@@ -127,33 +79,7 @@ onMounted(() => {
 
       </div>
     </div>
-    <div class="w-full text-white ">
-      <div class=" w-full ">
-        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 bg-black bg-opacity-23  px-10 py-10">
-          <div class="lg:col-span-2 " :class="scrollBottom == true ? 'flex items-center animate-center' : ''">
-            <div class="h-auto">
-              <h1 class="font-montserrat-bold text-6xl uppercase title-ticket">Compra</h1>
-              <h2 class="font-montserrat-bold text-6xl uppercase title-ticket">tus <span class="ml-1">entradas</span></h2>
-              <h4 class="font-montserrat px-3 py-2">
-                Del 1 de diciembre al 16 de junio del 2024.
-              </h4>
-            </div>
-          </div>
-
-          <div class="h-auto flex justify-center items-center">
-            <div class=" card-detail bg-slate-400">
-              COMPRAR ENTRADAS
-            </div>
-          </div>
-        </div>
-        <div class="flex justify-end w-full" id="prueba">
-          <div class=" w-4/12 bg-accent py-2 rounded-l-lg">
-            <h3 class=" font-montserrat-bold text-2xl text-center uppercase "
-              style="text-shadow: rgb(0 255 255) 1px 0px 15px;">No te quedes sin tus entradas</h3>
-          </div>
-        </div>
-      </div>
-    </div>
+    <BuyTicketsComponents />
     <div class="h-screen max-[767px]:h-auto max-[767px]:py-10">
       <div class="h-full w-full pt-10 ">
         <div class="w-full flex justify-center items-center h-2/12 max-[767px]:my-10 ">
@@ -168,15 +94,10 @@ onMounted(() => {
             </div>
           </div>
         </div>
-        <div class="flex justify-center max-[767px]:py-32">
-          <div class="w-8/12 flex justify-center max-[767px]:w-full">
-            <img src="@/assets/images/eyes-dino-home.jpg" alt="" srcset="" class="w-9/12 max-[767px]:w-full" />
-          </div>
-        </div>
-        <div class="h-screen max-[767px]:h-auto">
-          <div class="h-3/12 w-full flex justify-center">
-            <img :src="urlNeonText" alt="" srcset="" class="image-text-neon" />
-          </div>
+
+        <Intro2Component />
+        <!-- <div class="h-auto max-[767px]:h-auto">
+          
           <div class="h-9/12 max-[767px]:w-full max-[767px]:p-2">
             <div class="flex justify-between flex-col w-full h-full">
               <div class="flex justify-center items-center h-full ">
@@ -215,28 +136,26 @@ onMounted(() => {
                 <div class="text-center">
                   <p class=" text-primaryLight text-2xl font-bold">MÁS RECARGADOS QUE NUNCA</p>
                 </div>
-                <!-- <div class="text-center mt-3">
+                <div class="text-center mt-3">
                   <a href="/faqs"
                     class=" bg-primaryLight px-7 py-2 rounded-3xl text-black button-faqs transition duration-500">FAQs</a>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
-          <FaqsView />
-          <FooterComponent />
+         
 
-        </div>
+        </div> -->
+        <FaqsView />
+        <FooterComponent />
       </div>
     </div>
 
   </div>
 </template>
 <style scoped>
-.card-detail {
-  width: 300px;
-  height: 300px;
 
-}
+
 
 .banner-dino-fit {
   background: linear-gradient(to bottom, transparent 0%, black 100%);
@@ -246,52 +165,9 @@ onMounted(() => {
   text-shadow: rgb(255, 255, 255) 1px 0px 15px;
 }
 
-.button-faqs:hover {
-  opacity: 0.8;
-  box-shadow: 0px 7px 28px 1px rgba(255, 255, 255, 0.47);
-  -webkit-box-shadow: 0px 7px 28px 1px rgba(255, 255, 255, 0.47);
-  -moz-box-shadow: 0px 7px 28px 1px rgba(255, 255, 255, 0.47);
-}
 
-.text-intro {
-  left: 33rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.image-text-intro {
-  width: 80%;
-  margin-top: -30px;
-}
 
-.logo-heroes::after {
-  content: "PRESENTA";
-  color: #fff;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.bg-home {
-  background-image: url("@/assets/images/bg-home.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.logo-dino-banner {
-  width: 35%;
-  height: auto;
-}
-
-.container-logo-dino {
-  left: 300px;
-}
-
-.container-logo-heroes {
-  left: 28rem;
-}
 
 /* Pantallas grandes */
 @media (min-width: 1500px) {}
@@ -316,7 +192,5 @@ onMounted(() => {
 
 /*Mobile con pantallas pequeñas*/
 @media (max-width: 380px) {
-  .bg-home {
-    background-image: url("@/assets/images/bg-home-mobile.webp");
-  }
+ 
 }</style>
