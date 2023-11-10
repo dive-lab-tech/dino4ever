@@ -1,6 +1,5 @@
 <script setup>
-import gsap from "gsap";
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 import { setTitle } from "@/utils";
 import GalleryHome from "@/components/GalleryHome.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
@@ -12,31 +11,16 @@ import BuyTicketsComponents from "@/components/BuyTicketsComponents.vue";
 
 
 
-let scrollBottom = ref(false);
-
 
 setTitle("Dinosaurios Recargados");
 
 //animación de opacidad y escala en los elementos del banner
 onMounted(() => {
-  const divPadre = document.getElementById('prueba');
-  const alturaDivPadre = divPadre.offsetHeight;
-  divPadre.style.marginTop = '-' + alturaDivPadre / 2 + 'px';
-  console.log(alturaDivPadre);
+ 
 
 
  
 
-  //Validación de scroll Y
-  window.addEventListener("scroll", () => {
-    const scroll = window.scrollY;
-    if (scroll > 100) {
-      scrollBottom.value = true;
-    }
-    else {
-      scrollBottom.value = false;
-    }
-  });
 
 
 
@@ -80,9 +64,9 @@ onMounted(() => {
       </div>
     </div>
     <BuyTicketsComponents />
-    <div class="h-screen max-[767px]:h-auto max-[767px]:py-10">
+    <div class=" max-[767px]:h-auto max-[767px]:py-10">
       <div class="h-full w-full pt-10 ">
-        <div class="w-full flex justify-center items-center h-2/12 max-[767px]:my-10 ">
+        <div class="w-full my-20 flex justify-center items-center h-2/12 max-[767px]:my-10 ">
           <h1
             class="text-primaryLight font-extrabold text-4xl max-[767px]:text-center title-gallery font-montserrat-bold">
             NUESTRA DINOGALERÍA</h1>

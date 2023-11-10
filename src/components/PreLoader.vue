@@ -12,7 +12,9 @@ onMounted(() => {
         ease: 'power2.inOut',
         delay: 1,
         onComplete: () => {
-        isLoading.value = false;
+        // isLoading.value = false;
+        //Cuando termine la animación de la preloader, se elimina el div de la preloader
+        document.querySelector('.preloader').remove();
         },
     });
 
