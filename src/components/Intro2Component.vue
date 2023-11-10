@@ -40,7 +40,8 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="flex  my-20 max-[767px]:flex-col max-[767px]:my-10">
+    <div class=" my-20 max-[767px]:my-10">
+         <div class="flex  max-[767px]:flex-col ">
         <div class=" w-7/12  justify-end items-center  max-[767px]:w-full max-[767px]:justify-center max-[767px]:py-10">
             <!-- <img :src="urlNeonText" alt="" srcset="" class="image-text-neon " /> -->
             <p class=" text-primaryLight text-neon text-5xl text-center font-bold uppercase max-[767px]:text-3xl" v-html="neonTextHtml"> </p>
@@ -67,21 +68,23 @@ onMounted(() => {
 
                     </div>
                 </div>
-                <div class="text-white flex  flex-col justify-center mb-10">
-                    <div class="text-center">
-                        <p class=" text-primaryLight text-2xl font-bold">MÁS RECARGADOS QUE NUNCA</p>
-                    </div>
-                    <!-- <div class="text-center mt-3">
-                  <a href="/faqs"
-                    class=" bg-primaryLight px-7 py-2 rounded-3xl text-black button-faqs transition duration-500">FAQs</a>
-                </div> -->
-                </div>
+             
             </div>
         </div>
         <div class="w-5/12 flex justify-start items-center max-[767px]:w-full">
             <img src="@/assets/images/eyes-dino-home.jpg" alt="" srcset="" class="   eye-dino" />
         </div>
+        
     </div>
+    <div class="text-white flex  flex-col justify-center mb-10">
+                    <div class="text-center">
+                        <p class=" text-primaryLight text-2xl font-bold">MÁS RECARGADOS QUE NUNCA</p>
+                    </div>
+                
+                </div>
+    </div>
+   
+    
 </template>
 
 <style scoped>

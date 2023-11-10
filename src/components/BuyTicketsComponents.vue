@@ -17,24 +17,29 @@
           </div>
 
           <div class="w-1/2 h-auto flex justify-center items-center max-[1199px]:w-full">
-            <div class=" card-detail  flex justify-center items-center">
+            <div class=" card-detail  flex flex-col justify-center items-center">
+              <h3 class=" font-montserrat-bold mb-2 text-2xl text-center uppercase max-[767px]:text-sm"
+              style="text-shadow: rgb(0 255 255) 1px 0px 15px;">No te quedes sin tus entradas</h3>
               <a href="" class="text-3xl bg-secondary text-black rounded-lg py-2 px-3 btn-shop-ticket transition duration-500 ease-in-out">COMPRAR ENTRADAS</a>
             </div>
           </div>
         </div>
-  
+        <div class="flex justify-end w-full max-[767px]:justify-center" >
+       
+          
+        </div>
       </div>
     </div>
 </template>
 <style scoped>
 .card-detail {
-  width: 400px;
+  width: 100%;
   height: 300px;
 }
 .btn-shop-ticket:hover{
   box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.35); 
   text-shadow: 0px 0px 17px rgb(255, 255, 255);
-
+  
 }
 
 

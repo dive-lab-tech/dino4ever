@@ -38,12 +38,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="absolute right-40 max-[767px]:hidden font-montserrat" >
+  <header class="absolute  max-[767px]:hidden font-montserrat w-full" >
     <div >
-      <nav>
+      <nav class="flex justify-between px-20">
+        <a class="menu-items transition duration-900" href="/#home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath==='home' }"><img src="@/assets/images/logo-site.webp" class="logo-menu" alt=""></a>
         <ul class="flex justify-center items-center text-white uppercase">
           <li>
-            <a class="menu-items transition duration-900" href="/#home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath==='home' }"><img src="@/assets/images/logo-site.webp" class="logo-menu" alt=""></a>
+            <a class="transition duration-900 ml-5 bg-secondary text-black px-2 py-1 rounded-lg" href="/#home" >COMPRAR ENTRADAS</a>
           </li>
           <li>
             <a class="menu-items transition duration-900 ml-5" href="/#home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath===''   }">Inicio</a>
@@ -51,10 +52,7 @@ onMounted(() => {
           <li>
             <a class="menu-items transition duration-90 ml-5" href="/#faqs" @click="changeColor('faqs')" :class="{ 'active': selectedLink === 'faqs' || urlPath==='faqs'}">Preguntas frecuentes</a>
           </li>
-          <!-- <li>
-            <RouterLink class="menu-items transition duration-900 ml-5" to="/blog" @click="changeColor('blog')" :class="{ 'active': selectedLink === 'blog' || urlPath==='blog'}">Blog</RouterLink>
-          </li>
-          -->
+
         </ul>
       </nav>
     </div>
