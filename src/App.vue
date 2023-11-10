@@ -2,9 +2,22 @@
 import {  RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue';
 // import FooterComponent from '@/components/FooterComponent.vue';
+import Lenis from '@studio-freight/lenis'
 import preloader from '@/components/PreLoader.vue';
 
 
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  // console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
 
 const selectedLink = ref(null);
 const urlPath = ref(null);

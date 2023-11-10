@@ -5,8 +5,8 @@
 <template>
         <div class="w-full text-white ">
       <div class=" w-full ">
-        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 bg-black bg-opacity-23  px-10 py-10">
-          <div class="lg:col-span-2 flex items-center animate-center" >
+        <div class="flex bg-black bg-opacity-23  px-10 py-10 max-[1199px]:flex-col">
+          <div class="w-1/2 flex items-center animate-center max-[1199px]:w-full" >
             <div class="h-auto">
               <h1 class="font-montserrat-bold text-6xl uppercase title-ticket max-[767px]:text-4xl">Compra</h1>
               <h2 class="font-montserrat-bold text-6xl uppercase title-ticket max-[767px]:text-4xl">tus <span class="ml-1">entradas</span></h2>
@@ -16,9 +16,9 @@
             </div>
           </div>
 
-          <div class="h-auto flex justify-center items-center">
+          <div class="w-1/2 h-auto flex justify-center items-center max-[1199px]:w-full">
             <div class=" card-detail  flex justify-center items-center">
-              <a href="" class="text-2xl bg-secondary text-black rounded-lg py-2 px-3 btn-shop-ticket transition duration-400 ">COMPRAR ENTRADAS</a>
+              <a href="" class="text-3xl bg-secondary text-black rounded-lg py-2 px-3 btn-shop-ticket transition duration-500 ease-in-out">COMPRAR ENTRADAS</a>
             </div>
           </div>
         </div>
@@ -34,12 +34,13 @@
 </template>
 <style scoped>
 .card-detail {
-  width: 300px;
+  width: 400px;
   height: 300px;
 }
 .btn-shop-ticket:hover{
   box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.35); 
   text-shadow: 0px 0px 17px rgb(255, 255, 255);
+  
 }
 
 
