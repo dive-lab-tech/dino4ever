@@ -1,6 +1,6 @@
 <script setup>
 import FooterComponent from '@/components/FooterComponent.vue';
-import accordionComponent from '@/components/AccordionComponent.vue';
+import accordionComponent from '@/components/accordionComponent.vue';
 import { setTitle } from '@/utils';
 import { onMounted } from 'vue';
 import gsap from 'gsap';

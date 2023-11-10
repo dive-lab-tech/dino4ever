@@ -36,7 +36,7 @@ const showItemAccordion = (index) => {
 
 
 onMounted(() => {
-  
+
 
 });
 
@@ -71,46 +71,52 @@ onMounted(() => {
                 <div class=" bg-white item-accordion bg-opacity-80" style="opacity: 0;">
                     <div class="accordion-header flex justify-between items-center accordion-item-0 bg-white "
                         @click="showItemAccordion(0)">
-                        <h3 class="font-kanit font-semibold text-lg transition duration-500 " :class="activeItem==0 ?' text-black':'text-black'">
+                        <h3 class="font-kanit font-semibold text-lg transition duration-500 "
+                            :class="activeItem == 0 ? ' text-black' : 'text-black'">
                             1. ¿Cuando es el evento?
                         </h3>
                         <font-awesome-icon :icon="activeItem === 0 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
-                                " class="btn-icon  text-2xl transition duration-500 text-primary" />
+                            " class="btn-icon  text-2xl transition duration-500 text-primary" />
                     </div>
                     <div class="accordion-body    border-t">
                         <div class="py-5 px-3 flex max-[767px]:flex-col">
                             <div class="p-4 pt-3 w-8/12 max-[767px]:w-full flex items-center text-sm">
-                                <font-awesome-icon :icon="['fas', 'calendar-days'] " class="text-gray-900  mr-3" />
-                            <h4 class=" text-gray-900 flex ">
-                             Del 30 de junio al 16 de Julio del 2023.
-                            </h4>
-                        </div>
-                        <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
-                            <a href="" class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar tickets</a>
-                        </div>
+                                <font-awesome-icon :icon="['fas', 'calendar-days']" class="text-gray-900  mr-3" />
+                                <h4 class=" text-gray-900 flex ">
+                                    Del 30 de junio al 16 de Julio del 2023.
+                                </h4>
+                            </div>
+                            <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
+                                <a href=""
+                                    class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar
+                                    tickets</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class=" bg-white item-accordion bg-opacity-80 mt-1" style="opacity: 0;">
                     <div class="accordion-header flex justify-between items-center accordion-item-1 bg-white "
                         @click="showItemAccordion(1)">
-                        <h3 class="font-kanit font-semibold text-lg transition duration-500 " :class="activeItem==1 ?' text-black':'text-black'">
+                        <h3 class="font-kanit font-semibold text-lg transition duration-500 "
+                            :class="activeItem == 1 ? ' text-black' : 'text-black'">
                             1. ¿Cuando es el evento?
                         </h3>
                         <font-awesome-icon :icon="activeItem === 1 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
-                                " class="btn-icon  text-2xl transition duration-500 text-primary" />
+                            " class="btn-icon  text-2xl transition duration-500 text-primary" />
                     </div>
                     <div class="accordion-body    border-t">
                         <div class="py-5 px-3 flex max-[767px]:flex-col">
                             <div class="p-4 pt-3 w-8/12 max-[767px]:w-full flex items-center text-sm">
-                                <font-awesome-icon :icon="['fas', 'calendar-days'] " class="text-gray-900  mr-3" />
-                            <h4 class=" text-gray-900 flex ">
-                             Del 30 de junio al 16 de Julio del 2023.
-                            </h4>
-                        </div>
-                        <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
-                            <a href="" class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar tickets</a>
-                        </div>
+                                <font-awesome-icon :icon="['fas', 'calendar-days']" class="text-gray-900  mr-3" />
+                                <h4 class=" text-gray-900 flex ">
+                                    Del 30 de junio al 16 de Julio del 2023.
+                                </h4>
+                            </div>
+                            <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
+                                <a href=""
+                                    class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar
+                                    tickets</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -118,92 +124,104 @@ onMounted(() => {
                 <div class=" bg-white item-accordion bg-opacity-80 mt-1" style="opacity: 0;">
                     <div class="accordion-header flex justify-between items-center accordion-item-2 bg-white "
                         @click="showItemAccordion(2)">
-                        <h3 class="font-kanit font-semibold text-lg transition duration-500 " :class="activeItem==2 ?' text-black':'text-black'">
+                        <h3 class="font-kanit font-semibold text-lg transition duration-500 "
+                            :class="activeItem == 2 ? ' text-black' : 'text-black'">
                             1. ¿Cuando es el evento?
                         </h3>
                         <font-awesome-icon :icon="activeItem === 2 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
-                                " class="btn-icon  text-2xl transition duration-500 text-primary" />
+                            " class="btn-icon  text-2xl transition duration-500 text-primary" />
                     </div>
                     <div class="accordion-body    border-t">
                         <div class="py-5 px-3 flex max-[767px]:flex-col">
                             <div class="p-4 pt-3 w-8/12 max-[767px]:w-full flex items-center text-sm">
-                                <font-awesome-icon :icon="['fas', 'calendar-days'] " class="text-gray-900  mr-3" />
-                            <h4 class=" text-gray-900 flex ">
-                             Del 30 de junio al 16 de Julio del 2023.
-                            </h4>
-                        </div>
-                        <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
-                            <a href="" class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar tickets</a>
-                        </div>
+                                <font-awesome-icon :icon="['fas', 'calendar-days']" class="text-gray-900  mr-3" />
+                                <h4 class=" text-gray-900 flex ">
+                                    Del 30 de junio al 16 de Julio del 2023.
+                                </h4>
+                            </div>
+                            <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
+                                <a href=""
+                                    class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar
+                                    tickets</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class=" bg-white item-accordion bg-opacity-80 mt-1" style="opacity: 0;">
                     <div class="accordion-header flex justify-between items-center accordion-item-3 bg-white "
                         @click="showItemAccordion(3)">
-                        <h3 class="font-kanit font-semibold text-lg transition duration-500 " :class="activeItem==3 ?' text-black':'text-black'">
+                        <h3 class="font-kanit font-semibold text-lg transition duration-500 "
+                            :class="activeItem == 3 ? ' text-black' : 'text-black'">
                             1. ¿Cuando es el evento?
                         </h3>
                         <font-awesome-icon :icon="activeItem === 3 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
-                                " class="btn-icon  text-2xl transition duration-500 text-primary" />
+                            " class="btn-icon  text-2xl transition duration-500 text-primary" />
                     </div>
                     <div class="accordion-body    border-t">
                         <div class="py-5 px-3 flex max-[767px]:flex-col">
                             <div class="p-4 pt-3 w-8/12 max-[767px]:w-full flex items-center text-sm">
-                                <font-awesome-icon :icon="['fas', 'calendar-days'] " class="text-gray-900  mr-3" />
-                            <h4 class=" text-gray-900 flex ">
-                             Del 30 de junio al 16 de Julio del 2023.
-                            </h4>
-                        </div>
-                        <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
-                            <a href="" class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar tickets</a>
-                        </div>
+                                <font-awesome-icon :icon="['fas', 'calendar-days']" class="text-gray-900  mr-3" />
+                                <h4 class=" text-gray-900 flex ">
+                                    Del 30 de junio al 16 de Julio del 2023.
+                                </h4>
+                            </div>
+                            <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
+                                <a href=""
+                                    class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar
+                                    tickets</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class=" bg-white item-accordion bg-opacity-80 mt-1" style="opacity: 0;">
                     <div class="accordion-header flex justify-between items-center accordion-item-4 bg-white "
                         @click="showItemAccordion(4)">
-                        <h3 class="font-kanit font-semibold text-lg transition duration-500 " :class="activeItem==4 ?' text-black':'text-black'">
+                        <h3 class="font-kanit font-semibold text-lg transition duration-500 "
+                            :class="activeItem == 4 ? ' text-black' : 'text-black'">
                             1. ¿Cuando es el evento?
                         </h3>
                         <font-awesome-icon :icon="activeItem === 4 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
-                                " class="btn-icon  text-2xl transition duration-500 text-primary" />
+                            " class="btn-icon  text-2xl transition duration-500 text-primary" />
                     </div>
                     <div class="accordion-body    border-t">
                         <div class="py-5 px-3 flex max-[767px]:flex-col">
                             <div class="p-4 pt-3 w-8/12 max-[767px]:w-full flex items-center text-sm">
-                                <font-awesome-icon :icon="['fas', 'calendar-days'] " class="text-gray-900  mr-3" />
-                            <h4 class=" text-gray-900 flex ">
-                             Del 30 de junio al 16 de Julio del 2023.
-                            </h4>
-                        </div>
-                        <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
-                            <a href="" class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar tickets</a>
-                        </div>
+                                <font-awesome-icon :icon="['fas', 'calendar-days']" class="text-gray-900  mr-3" />
+                                <h4 class=" text-gray-900 flex ">
+                                    Del 30 de junio al 16 de Julio del 2023.
+                                </h4>
+                            </div>
+                            <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
+                                <a href=""
+                                    class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar
+                                    tickets</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class=" bg-white item-accordion bg-opacity-80 mt-1" style="opacity: 0;">
                     <div class="accordion-header flex justify-between items-center accordion-item-5 bg-white "
                         @click="showItemAccordion(5)">
-                        <h3 class="font-kanit font-semibold text-lg transition duration-500 " :class="activeItem==5 ?' text-black':'text-black'">
+                        <h3 class="font-kanit font-semibold text-lg transition duration-500 "
+                            :class="activeItem == 5 ? ' text-black' : 'text-black'">
                             1. ¿Cuando es el evento?
                         </h3>
                         <font-awesome-icon :icon="activeItem === 5 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
-                                " class="btn-icon  text-2xl transition duration-500 text-primary" />
+                            " class="btn-icon  text-2xl transition duration-500 text-primary" />
                     </div>
                     <div class="accordion-body    border-t">
                         <div class="py-5 px-3 flex max-[767px]:flex-col">
                             <div class="p-4 pt-3 w-8/12 max-[767px]:w-full flex items-center text-sm">
-                                <font-awesome-icon :icon="['fas', 'calendar-days'] " class="text-gray-900  mr-3" />
-                            <h4 class=" text-gray-900 flex ">
-                             Del 30 de junio al 16 de Julio del 2023.
-                            </h4>
-                        </div>
-                        <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
-                            <a href="" class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar tickets</a>
-                        </div>
+                                <font-awesome-icon :icon="['fas', 'calendar-days']" class="text-gray-900  mr-3" />
+                                <h4 class=" text-gray-900 flex ">
+                                    Del 30 de junio al 16 de Julio del 2023.
+                                </h4>
+                            </div>
+                            <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
+                                <a href=""
+                                    class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar
+                                    tickets</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,50 +229,48 @@ onMounted(() => {
                 <div class=" bg-white item-accordion bg-opacity-80 mt-1" style="opacity: 0;">
                     <div class="accordion-header flex justify-between items-center accordion-item-6 bg-white "
                         @click="showItemAccordion(6)">
-                        <h3 class="font-kanit font-semibold text-lg transition duration-500 " :class="activeItem==6 ?' text-black':'text-black'">
+                        <h3 class="font-kanit font-semibold text-lg transition duration-500 "
+                            :class="activeItem == 6 ? ' text-black' : 'text-black'">
                             1. ¿Cuando es el evento?
                         </h3>
                         <font-awesome-icon :icon="activeItem === 6 ? 'fa-solid fa-minus' : 'fa-solid fa-plus'
-                                " class="btn-icon  text-2xl transition duration-500 text-primary" />
+                            " class="btn-icon  text-2xl transition duration-500 text-primary" />
                     </div>
                     <div class="accordion-body    border-t">
                         <div class="py-5 px-3 flex max-[767px]:flex-col">
                             <div class="p-4 pt-3 w-8/12 max-[767px]:w-full flex items-center text-sm">
-                                <font-awesome-icon :icon="['fas', 'calendar-days'] " class="text-gray-900  mr-3" />
-                            <h4 class=" text-gray-900 flex ">
-                             Del 30 de junio al 16 de Julio del 2023.
-                            </h4>
-                        </div>
-                        <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
-                            <a href="" class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar tickets</a>
-                        </div>
+                                <font-awesome-icon :icon="['fas', 'calendar-days']" class="text-gray-900  mr-3" />
+                                <h4 class=" text-gray-900 flex ">
+                                    Del 30 de junio al 16 de Julio del 2023.
+                                </h4>
+                            </div>
+                            <div class="flex justify-center items-center w-4/12 max-[767px]:w-full">
+                                <a href=""
+                                    class="bg-secondary text-black py-2 px-3 rounded-lg uppercase text-sm font-semibold ">Comprar
+                                    tickets</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
-        
+
 
 
 
             </div>
         </div>
-    </div>
-</template>
+</div></template>
 
-<style scoped>
-/* .accordion-header{
+<style scoped>/* .accordion-header{
     border-radius:  0.5rem 0.5rem 0 0;
 }
 
 .accordion-header.active{
     border-radius:  0.5rem 0.5rem 0 0;
 } */
-.accordion-body button{
-    
-}
-.item-accordion{
-    transform: translateX(8rem);
-}
+.accordion-body button {}
 
-</style>
+.item-accordion {
+    transform: translateX(8rem);
+}</style>
