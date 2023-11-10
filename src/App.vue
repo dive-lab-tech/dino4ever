@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import {  RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue';
 // import FooterComponent from '@/components/FooterComponent.vue';
 import preloader from '@/components/PreLoader.vue';
@@ -25,23 +25,23 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="absolute left-80 max-[767px]:hidden" >
+  <header class="absolute right-40 max-[767px]:hidden font-montserrat" >
     <div >
       <nav>
         <ul class="flex justify-center items-center text-white uppercase">
           <li>
-            <RouterLink class="menu-items transition duration-900" to="/home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath==='home' }"><img src="@/assets/images/logo-site.webp" class="logo-menu" alt=""></RouterLink>
+            <a class="menu-items transition duration-900" href="/#home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath==='home' }"><img src="@/assets/images/logo-site.webp" class="logo-menu" alt=""></a>
           </li>
           <li>
-            <RouterLink class="menu-items transition duration-900 ml-5" to="/home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath==='home'   }">Home</RouterLink>
+            <a class="menu-items transition duration-900 ml-5" href="/#home" @click="changeColor('home')" :class="{ 'active': selectedLink === 'home' || urlPath===''   }">Inicio</a>
           </li>
           <li>
-            <RouterLink class="menu-items transition duration-90 ml-5" to="/faqs" @click="changeColor('faqs')" :class="{ 'active': selectedLink === 'faqs' || urlPath==='faqs'}">Faqs</RouterLink>
+            <a class="menu-items transition duration-90 ml-5" href="/#faqs" @click="changeColor('faqs')" :class="{ 'active': selectedLink === 'faqs' || urlPath==='faqs'}">Preguntas frecuentes</a>
           </li>
-          <li>
+          <!-- <li>
             <RouterLink class="menu-items transition duration-900 ml-5" to="/blog" @click="changeColor('blog')" :class="{ 'active': selectedLink === 'blog' || urlPath==='blog'}">Blog</RouterLink>
           </li>
-         
+          -->
         </ul>
       </nav>
     </div>

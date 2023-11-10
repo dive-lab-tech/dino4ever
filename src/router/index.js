@@ -6,33 +6,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/home'
-    },
-    {
-      path: '/home',
-      name: 'home',
       component: HomeView
     },
-    {
-      path: '/blog',
-      name: 'blog',
-      component: () => import('@/views/BlogView.vue')
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('@/views/ContactsView.vue') // Reemplaza 'ContactView.vue' con tu nombre de archivo real
-    },{
-      path: '/prueba',
-      name: 'prueba',
-      component: () => import('@/views/PruebaView.vue')
-    },
-    {
-      path: '/faqs',
-      name: 'faqs',
-      component: () => import('@/views/FaqsView.vue')
-    },
-    // si no existe la ruta
     {
       path: '/:pathMatch(.*)*',
       component: () => import('@/views/NotFoundView.vue')

@@ -6,6 +6,7 @@ import GalleryHome from "@/components/GalleryHome.vue";
 import neonText from "@/assets/images/neon-text-home-1.webp";
 import neonText2 from "@/assets/images/neon-text-home-2.webp";
 import FooterComponent from "@/components/FooterComponent.vue";
+import FaqsView from "@/views/FaqsView.vue";
 
 
 
@@ -119,7 +120,7 @@ onMounted(() => {
       </div>
     </div> -->
 
-    <div class="w-full">
+    <div class="w-full" id="home">
       <div class=" bg-white banner-dino-fit">
         <img src="@/assets/images/banner-home-sec-1.jpg" alt="" class=" max-[768px]:hidden" style="">
         <img src="@/assets/images/banner-home-sec-mobile-1.jpg" alt="" class="hidden max-[767px]:block">
@@ -214,14 +215,14 @@ onMounted(() => {
                 <div class="text-center">
                   <p class=" text-primaryLight text-2xl font-bold">MÁS RECARGADOS QUE NUNCA</p>
                 </div>
-                <div class="text-center mt-3">
+                <!-- <div class="text-center mt-3">
                   <a href="/faqs"
                     class=" bg-primaryLight px-7 py-2 rounded-3xl text-black button-faqs transition duration-500">FAQs</a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
-
+          <FaqsView />
           <FooterComponent />
 
         </div>
