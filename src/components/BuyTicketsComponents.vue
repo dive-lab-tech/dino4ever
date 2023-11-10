@@ -22,13 +22,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-end w-full max-[767px]:justify-center" >
-          <div class=" w-4/12 bg-accent py-2 rounded-l-lg max-[1199px]:w-6/12 max-[767px]:rounded-r-lg max-[767px]:w-10/12">
-            <h3 class=" font-montserrat-bold text-2xl text-center uppercase max-[767px]:text-sm"
-              style="text-shadow: rgb(0 255 255) 1px 0px 15px;">No te quedes sin tus entradas</h3>
-          </div>
-          
-        </div>
+  
       </div>
     </div>
 </template>
@@ -40,7 +34,7 @@
 .btn-shop-ticket:hover{
   box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.35); 
   text-shadow: 0px 0px 17px rgb(255, 255, 255);
-  
+
 }
 
 
