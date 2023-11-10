@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import videoSource from '@/assets/images/video.mp4';
 import { useModal, ModalsContainer } from 'vue-final-modal'
-import ModalGallery from '@/Components/ModalGallery.vue'
+import ModalGallery from '@/components/ModalGallery.vue'
 const indexImageView = ref(0);
 
 
