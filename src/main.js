@@ -27,6 +27,7 @@ library.add(
     IconsFa.faComment,
     IconsFa.faBolt,
     IconsFa.faCalendarDays,
+    IconsFa.faBars,
     fab.faFacebookF,
     fab.faTwitter,
     fab.faInstagram,

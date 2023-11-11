@@ -50,7 +50,7 @@ onMounted(() => {
   <div class=" bg-faqs  w-full max[767px]:px-2   " id="faqs">
     <div class=" w-full h-full bg-black bg-opacity-40 px-2">
       <div class="flex justify-center">
-        <div class="pt-10 w-5/12 max-[1199px]:w-7/12 max-[767px]:w-full">
+        <div class="py-10 w-5/12 max-[1199px]:w-7/12 max-[767px]:w-full">
           <div class="my-10 flex justify-center ">
             <h1
               class=" text-primary text-4xl mb-4 text-center uppercase title-faqs bg-primaryLight px-1 py-1 rounded-md font-montserrat-bold max-[767px]:text-2xl"
